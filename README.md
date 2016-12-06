@@ -45,9 +45,10 @@ all the data memory accesses that occur in the sample program. Each line in the 
 reference. Each line in the trace cache therefore have the following two fields:
 
 ●	**Access Type**: A single character indicating whether the access is a read (‘R') or a write ('W').
+
 ●	**Address**: A 32-bit integer (in unsigned hexidecimal format) specifying the memory address that is being accessed.
 Fields on the same line are separated by a single space. 
 
-The code reads the trace file one line at a time in order. After each access, your code should emulate the impact of
-the access on the cache hierarchy.
+The code reads the trace file one line at a time in order. After each access, code emulates the impact of the access on
+the cache hierarchy.
 
